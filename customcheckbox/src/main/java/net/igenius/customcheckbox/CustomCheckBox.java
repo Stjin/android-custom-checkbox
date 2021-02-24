@@ -31,7 +31,7 @@ public class CustomCheckBox extends View implements Checkable {
     private static final int COLOR_CHECKED = Color.parseColor("#FB4846");
     private static final int COLOR_FLOOR_UNCHECKED = Color.parseColor("#DFDFDF");
 
-    private static final int DEF_DRAW_SIZE = 60;
+    private static final int DEF_DRAW_SIZE = 100;
     private static final int DEF_ANIM_DURATION = 300;
 
     private Paint mPaint, mTickPaint, mFloorPaint;
@@ -255,24 +255,24 @@ public class CustomCheckBox extends View implements Checkable {
         float heightUnity = (float) getMeasuredHeight() / totalPoints;
 
         if (mSmallTick) {
-            mTickPoints[0].x = Math.round(widthUnity * 11);
-            mTickPoints[0].y = Math.round(heightUnity * 15);
+            mTickPoints[0].x = Math.round(widthUnity * 15);
+            mTickPoints[0].y = Math.round(heightUnity * 20);
 
-            mTickPoints[1].x = Math.round(widthUnity * 14);
-            mTickPoints[1].y = Math.round(heightUnity * 18);
+            mTickPoints[1].x = Math.round(widthUnity * 19);
+            mTickPoints[1].y = Math.round(heightUnity * 23);
 
-            mTickPoints[2].x = Math.round(widthUnity * 20);
-            mTickPoints[2].y = Math.round(heightUnity * 13);
+            mTickPoints[2].x = Math.round(widthUnity * 25);
+            mTickPoints[2].y = Math.round(heightUnity * 18);
 
         } else {
-            mTickPoints[0].x = Math.round(widthUnity * 1);
-            mTickPoints[0].y = Math.round(heightUnity * 5);
+            mTickPoints[0].x = Math.round(widthUnity * 6);
+            mTickPoints[0].y = Math.round(heightUnity * 10);
 
-            mTickPoints[1].x = Math.round(widthUnity * 4);
-            mTickPoints[1].y = Math.round(heightUnity * 8);
+            mTickPoints[1].x = Math.round(widthUnity * 8);
+            mTickPoints[1].y = Math.round(heightUnity * 13);
 
-            mTickPoints[2].x = Math.round(widthUnity * 10);
-            mTickPoints[2].y = Math.round(heightUnity * 3);
+            mTickPoints[2].x = Math.round(widthUnity * 15);
+            mTickPoints[2].y = Math.round(heightUnity * 8);
         }
 
         mLeftLineDistance = (float) Math.sqrt(Math.pow(mTickPoints[1].x - mTickPoints[0].x, 2) +
