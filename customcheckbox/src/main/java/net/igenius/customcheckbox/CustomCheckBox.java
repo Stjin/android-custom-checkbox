@@ -31,7 +31,7 @@ public class CustomCheckBox extends View implements Checkable {
     private static final int COLOR_CHECKED = Color.parseColor("#FB4846");
     private static final int COLOR_FLOOR_UNCHECKED = Color.parseColor("#DFDFDF");
 
-    private static final int DEF_DRAW_SIZE = 100;
+    private static final int DEF_DRAW_SIZE = 60;
     private static final int DEF_ANIM_DURATION = 300;
 
     private Paint mPaint, mTickPaint, mFloorPaint;
