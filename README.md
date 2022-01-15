@@ -1,8 +1,22 @@
 # Android Custom CheckBox
 Android custom checkbox based on [SmoothCheckBox](https://github.com/andyxialm/SmoothCheckBox)
 
-```groovy
-compile 'net.igenius:customcheckbox:1.3'
+
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+*Step 2*. Add the dependency
+
+```
+dependencies {
+    implementation 'com.github.Stjin:android-custom-checkbox:Tag'
+}
 ```
 
 ![](https://github.com/iGenius-Srl/android-custom-checkbox/blob/master/assets/smoothcb.gif?raw=true)
@@ -37,6 +51,3 @@ protected void onCreate(Bundle savedInstanceState) {
     });
 }
 ```
-
-## Publishing
-To publish on bintray, simply execute: `./gradlew clean assembleRelease bintrayUpload`
