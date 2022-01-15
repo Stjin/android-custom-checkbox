@@ -1,4 +1,0 @@
-include ':app-demo'
-include ':customcheckbox'
-project(':customcheckbox').projectDir = file('../customcheckbox')
-

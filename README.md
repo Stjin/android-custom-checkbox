@@ -21,7 +21,7 @@ dependencies {
 }
 ```
 
-![](https://github.com/iGenius-Srl/android-custom-checkbox/blob/master/assets/smoothcb.gif?raw=true)
+![](https://github.com/Stjin/android-custom-checkbox/blob/master/assets/smoothcb.gif?raw=true)
 
 ## Attrs
 

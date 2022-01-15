@@ -221,9 +221,9 @@ class CustomCheckBox : View, Checkable {
     override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
         mWidth = measuredWidth
         val totalPoints: Int = if (isSmallTick) {
-            30
+            40
         } else {
-            11
+            20
         }
         mStrokeWidth = measuredWidth / totalPoints
         mCenterPoint!!.x = mWidth / 2
