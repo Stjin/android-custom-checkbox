@@ -225,7 +225,7 @@ class CustomCheckBox : View, Checkable {
         } else {
             20
         }
-        mStrokeWidth = measuredWidth / totalPoints
+        mStrokeWidth = measuredWidth / totalPoints * 2
         mCenterPoint!!.x = mWidth / 2
         mCenterPoint!!.y = measuredHeight / 2
         val widthUnity = measuredWidth.toFloat() / totalPoints
